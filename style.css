@@ -1,0 +1,289 @@
+/* The Party Starts Here */
+html, footer { background-color: #f5f7f9 }
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+	position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    height: 50px;
+    perspective: 2000px;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: transparent;
+}
+
+.navbar .navbar-brand {
+	/*font-family: 'Kaushan Script', cursive;*/
+	font-family: 'Racing Sans One', cursive;
+	font-size: 40px;
+	color: #fff;
+	height: auto;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active {
+	color: #fff;
+	font-size: 17px;
+	padding-top: 45px;
+	padding: 45px 30px 0;
+}
+
+
+
+
+/* Gradient */
+.socialBlastIntro {
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+}
+
+.sbGradient {
+	background-image: linear-gradient(90deg,#4fcbce,#58bbed 30%,#7e9aff 58%,#ce8beb);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5000px;
+    margin-bottom: 50px;
+}
+
+.sb0 {
+	background-image: linear-gradient(90deg,#77f7ad,#3fe2db);
+    bottom: 0;
+    left: 0;
+    right: calc(100% - 355px);
+}
+
+.sb1 {
+	background-image: linear-gradient(90deg,#edf6ff 6%,#edf6ff 23%,#fff 95%);
+    bottom: 0;
+    left: 355px;
+    right: 600px;
+}
+
+.sb2 {
+	background-image: linear-gradient(270deg,#ffcd42 3%,#f6e870);
+    bottom: 0;
+    left: calc(50% + 260px);
+    right: 0;
+}
+
+.sb3{
+	background-image: linear-gradient(90deg,#5dd8f6,#52e4e7 98%);
+    bottom: 50px;
+    left: 0;
+    right: calc(50% + 475px);
+}
+
+.sb4 {
+	background-image: linear-gradient(90deg,#5dd1f6,#6acbf9 98%);
+    bottom: 50px;
+    left: calc(50% - 450px);
+    right: calc(100% - 510px);
+}
+
+.sb5 {
+	background-image: linear-gradient(90deg,#facb6c,#ffab43 98%);
+    bottom: 50px;
+    left: calc(50% + 360px);
+    right: 0;
+}
+
+.sb6 {
+	background-image: linear-gradient(90deg,#8a7dff 3%,#c585f0 97%);
+    bottom: 100px;
+    left: calc(50% + 305px);
+    right: 0;
+}
+
+.sb7 {
+	background-image: linear-gradient(90deg,hsla(0,0%,100%,.25) 3%,hsla(0,0%,100%,0) 96%);
+    mix-blend-mode: soft-light;
+    bottom: 150px;
+    left: 53px;
+    right: calc(50% + 220px);
+}
+
+.sb8 {
+	background: #fff;
+    opacity: .15;
+    mix-blend-mode: soft-light;
+    bottom: 150px;
+    left: 50%;
+    right: calc(50% - 210px);
+}
+
+.sb9 {
+	background: #fff;
+    opacity: .15;
+    mix-blend-mode: soft-light;
+    bottom: 150px;
+    left: calc(50% + 430px);
+    right: 0;
+}
+
+.sb10 {
+	background: rgba(0,0,0,.12);
+    mix-blend-mode: soft-light;
+    bottom: 200px;
+    left: calc(50% - 430px);
+    right: calc(50% + 200px);
+}
+
+.sb11 {
+	background-image: linear-gradient(90deg,transparent,rgba(0,0,0,.65) 97%);
+    mix-blend-mode: soft-light;
+    opacity: .27;
+    bottom: 200px;
+    left: calc(50% - 65px);
+    right: calc(50% - 340px);
+}
+
+.sb12 {
+	background-image: linear-gradient(90deg,#d98cf2,#f194e3 97%);
+    bottom: 250px;
+    right: 0;
+    left: calc(50% + 390px);
+}
+
+.sb13 {
+	background-image: linear-gradient(90deg,#8da7ff,#d196f4 97%);
+    bottom: 300px;
+    left: calc(50% + 175px);
+    right: calc(50% - 495px);
+}
+
+.sb14 {
+	bottom: -50px;
+    left: calc(100% - 440px);
+    right: calc(50% - 572px);
+    background-image: linear-gradient(90deg,#f6f9fc,#edf3fa 95%);
+}
+
+.socialBlastStripe {
+	position: absolute;
+    height: 50px;
+    top: auto;
+}
+
+.socialBlastBg {
+	transform: skew(0,-12deg);
+    will-change: transform;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 991px) {
+	.socialBlastIntro {
+		height: 1000px;
+	}
+
+	.socialBlastBg {
+		display: block;
+		bottom: 50%;
+	}
+}
+
+/* Header */
+header {
+	padding-top: 140px;
+	margin-bottom: 50px;
+}
+
+header h1 {
+	color: #fff;
+}
+
+header h2 {
+	color: #43458b;
+	font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    padding: 0;
+    margin-top: 0;
+}
+
+/* Trinity */
+.socialBlastTrinity a {
+	text-decoration: none;
+}
+
+/* Card */
+.socialBlastCard {
+    width: 100%;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    padding: 25px 30px;
+    position: relative;
+    -webkit-scroll-snap-coordinate: 50% 0;
+    -ms-scroll-snap-coordinate: 50% 0;
+    scroll-snap-coordinate: 50% 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    transition-property: color,background-color,box-shadow,transform;
+    transition-duration: .15s;
+}
+
+.socialBlastCardAnchor {
+	text-decoration: none;
+}
+
+.socialBlastCard img {
+	border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: -45px;
+    margin-bottom: 20px;
+}
+
+.socialBlastCard h1 {
+	color: #32325d;
+	font-size: 19px;
+    line-height: 19px;
+	margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.socialBlastCard p {
+	color: #6b7c93;
+	font-size: 17px;
+    line-height: 26px;
+}
+
+.starLord {
+	background: linear-gradient(225deg,#edf2f7,#edf2f7 50%,transparent 0);
+    border-top-right-radius: 4px;
+    color: #aab7c5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 47px;
+    width: 47px;
+}
+
+.starLord i {
+	position: absolute;
+    top: 7px;
+    right: 6px;
+    width: 15px;
+    height: 15px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "socialblast",
+  "version": "1.0.0",
+  "description": "Social Blast",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --progress --inline --hot --history-api-fallback"
+  },
+  "keywords": [],
+  "author": "Ollie Cee",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "wowjs": "^1.1.3"
+  }
+}
