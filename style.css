@@ -6,6 +6,47 @@ body {
 	background-color: #fff;
 }
 
+/* Shared */
+button {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: #6772e5;
+    text-decoration: none;
+    transition: all .15s ease;
+    outline: 0;
+    border: 0;
+}
+
+button:hover {
+    color: #7795f8;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+button.socialBlastBtn {
+    color: #fff;
+    background: #6772e5;
+}
+
+button.socialBlastBtn:hover {  
+    background-color: #7795f8;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 /* Navbar */
 .navbar {
 	position: absolute;
@@ -26,7 +67,8 @@ body {
 	border-color: transparent;
 }
 
-.navbar .navbar-brand {
+.navbar .navbar-brand,
+.logo a {
 	/*font-family: 'Kaushan Script', cursive;*/
 	font-family: 'Racing Sans One', cursive;
 	font-size: 40px;
@@ -43,9 +85,6 @@ body {
 	padding-top: 45px;
 	padding: 45px 30px 0;
 }
-
-
-
 
 /* Gradient */
 .socialBlastIntro {
@@ -245,7 +284,8 @@ header h2 {
 	text-decoration: none;
 }
 
-.socialBlastCard img {
+.socialBlastCard img.sponsor,
+.socialBlastCard svg.sponsor {
 	border-radius: 50%;
     box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     display: inline-block;
@@ -253,6 +293,15 @@ header h2 {
     height: 100px;
     margin-top: -45px;
     margin-bottom: 20px;
+}
+
+.cardImage img.icon,
+.cardImage svg.icon {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: -157px;
+    top: calc(50% - 74px);
 }
 
 .socialBlastCard h1 {
@@ -266,7 +315,7 @@ header h2 {
 .socialBlastCard p {
 	color: #6b7c93;
 	font-size: 17px;
-    line-height: 26px;
+    line-height: 28px;
 }
 
 .starLord {
@@ -286,4 +335,19 @@ header h2 {
     right: 6px;
     width: 15px;
     height: 15px;
+}
+
+.cardImage {
+    padding-left: 140px;
+    overflow: hidden;
+}
+
+/* Footer */
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer .logo a {
+    color: #6772e5;
 }
