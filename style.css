@@ -1,5 +1,5 @@
 /* The Party Starts Here */
-html, footer { background-color: #f5f7f9 }
+html { background-color: #f5f7f9 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -344,8 +344,22 @@ header h2 {
 
 /* Footer */
 footer {
-    padding-top: 40px;
+    position: relative;
+    padding-top: 500px;
+    margin-top: 0px;
     padding-bottom: 40px;
+    overflow: hidden;
+    background: transparent;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    background: #f6f9fc;
+    transform: skew(0,-12deg);
 }
 
 footer .logo a {
